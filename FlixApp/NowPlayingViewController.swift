@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class NowPlayingViewController: UIViewController, UITableViewDataSource {
 
@@ -49,6 +50,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         
         task.resume()
         
+        
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -64,6 +66,11 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         let overview = movie["overview"] as! String
         cell.titleLabel.text = title
         cell.overViewLabel.text = overview
+        let posterPathString = movie["poster_path"] as! String
+        let baseURLString = "https://image.tmdb.org/t/p/w500"
+        
+        let posterURL = URL(string: baseURLString + posterPathString)!
+        cell.postImageView.af_setImage(withURL: posterURL)
         
         return cell
     }
