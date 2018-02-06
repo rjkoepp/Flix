@@ -33,7 +33,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
     
     // common for controls to pass selves
     @objc func didPullToRefresh(_ refreshControl: UIRefreshControl) {
-        activityIndicator.startAnimating()
+        self.activityIndicator.startAnimating()
         fetchMovies()
     }
     
