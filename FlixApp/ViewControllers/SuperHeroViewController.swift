@@ -10,6 +10,7 @@ import UIKit
 
 class SuperHeroViewController: UIViewController,UICollectionViewDataSource {
     
+    // need to implement stretch stories
     @IBOutlet weak var collectionView: UICollectionView!
     
     var movies: [[String: Any]] = []
