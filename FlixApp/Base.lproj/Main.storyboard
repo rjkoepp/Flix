@@ -185,6 +185,7 @@
                                         </view>
                                         <connections>
                                             <outlet property="posterImageView" destination="IKN-US-I8z" id="Xlz-XJ-60B"/>
+                                            <segue destination="Sc9-YY-C3p" kind="show" id="XR7-Qr-tzP"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -208,6 +209,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="0GE-9K-XWR" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kn7-Nk-LIO">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -244,4 +246,7 @@
         <image name="now_playing_tabbar_item" width="21" height="21"/>
         <image name="superhero_tabbar_item" width="21" height="23"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="XR7-Qr-tzP"/>
+    </inferredMetricsTieBreakers>
 </document>
